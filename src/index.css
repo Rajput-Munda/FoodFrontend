@@ -1,0 +1,72 @@
+@media screen and (max-width: 640px) {
+    /* Hide the sidebar by default on small screens */
+    .sidebar {
+        display: none;
+    }
+
+    /* Display the menu toggle button */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Adjust the main content to take up the full width */
+    .main {
+        margin-left: 0;
+    }
+
+    /* Style the menu toggle button */
+    .menu-toggle {
+        text-decoration: none;
+        font-size: 20px;
+        background-color: var(--whiteColor);
+        color: var(--primaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    /* Add a transition effect to smoothly show/hide the sidebar */
+    .sidebar.active {
+        display: flex;
+        z-index: 10;
+        transition: transform 0.3s;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .sidebar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: var(--whiteColor);
+        color: var(--primaryColor);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    .sidebar.active {
+        display: flex;
+        z-index: 10;
+    }
+}

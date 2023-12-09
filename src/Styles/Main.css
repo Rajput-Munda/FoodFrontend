@@ -1,0 +1,11 @@
+.main {
+    width: 100%;
+    min-width: 300px;
+    height: max-content;
+    min-height: 100vh;
+    padding: 2%;
+    background-color: var(--softGreenColor);
+    /* margin-left: 250px; */
+}
+
+
